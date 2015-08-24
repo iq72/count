@@ -18,7 +18,7 @@
 
              var p=document.getElementById("sl");
              for(var i=0, length=document.getElementsByTagName("h3").length; i<length;i++){
-               p.textContent += i +". " + document.getElementsByTagName("h3")[i].innerText + "\r" +"\n";
+               p.innerHTML +="<p>" + document.getElementsByTagName("h3")[i].innerText + "</p>";
              }
            }, false);
 
@@ -26,9 +26,9 @@
        </script>
        <section id="shortList">
          <h1>ShrotList</h1>
-         <p id="sl">
+         <div id="sl">
 
-         </p>
+         </div>
        </section>
 
   </body>
